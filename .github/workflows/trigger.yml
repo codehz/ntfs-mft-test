@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: cd
         shell: cmd
-        run: "cd C:\\:$i30:$bitmap"
+        run: "echo a > C:\\:$i30:$bitmap"
       - name: are you ok?
         shell: cmd
         if: ${{ failure() }}
-        run: echo "still alive"
+        run: "chkdsk C: /f"
