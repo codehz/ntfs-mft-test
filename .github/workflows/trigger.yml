@@ -11,4 +11,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: cd
+        shell: cmd
         run: "cd C:\\:$i30:$bitmap"
